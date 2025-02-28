@@ -1,0 +1,61 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navigation Bar Styling */
+  .topnav {
+    /* background-color: #333; */
+    /* background-color: darkgrey; */
+    background-color: darkblue;
+    overflow: hidden;
+    display: flex;
+    justify-content:left;
+    padding: 10px;
+  }
+  
+  .topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .topnav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    border-radius: 5px;
+  }
+  
+  /* Page Content Styling */
+  .page-content {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+.search {
+  position: absolute;
+  top: 24px;
+  left: 380px;
+}
+.s1{
+  width: 200px;
+  height: 35px;
+}
+.s2{
+  width: 60px;
+  height: 35px;
+}
