@@ -1,3 +1,14 @@
+
+<div class="topnav">
+  <a routerLink="/home" routerLinkActivate="active">Home</a>
+  <a routerLink="/about" routerLinkActivate="active">About</a>
+  <a routerLink="/contact" routerLinkActivate="active">Contact</a>
+</div>
+<div class="search">
+  <input class="s1" type="search" placeholder="search...">
+  <button class="s2" type="submit">search</button>
+</div>
+
 <nav>
   <div class="nav-container">
     <div class="logo">MyApp</div>
@@ -12,4 +23,5 @@
     <div class="burger" (click)="toggleNav()">☰</div>
   </div>
 </nav>
+
 <router-outlet></router-outlet>
