@@ -1,59 +1,27 @@
-# Assignment
+# Responsive Navigation Bar with Angular 17
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+This project demonstrates how to create a **responsive navigation bar** using Angular 17. The navigation bar includes options for **Home**, **About**, **Contact**, **Search**, **Login**, and **Logout**. Each option is linked to a dedicated component, and the application uses Angular routing to dynamically load the respective components.
 
-## Development server
+## Features
 
-To start a local development server, run:
+1. **Responsive Navigation Bar**:
+   - Collapses into a burger menu on screens smaller than 768px.
+   - Toggle the menu by clicking the burger icon (☰).
 
-```bash
-ng serve
-```
+2. **Routing**:
+   - Each navigation option (`Home`, `About`, `Contact`, `Search`, `Login`, `Logout`) is linked to its respective component.
+   - Uses Angular routing for seamless navigation.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+3. **Search Functionality**:
+   - Includes a search input field.
+   - Logs the search query to the console when the user presses **Enter** or clicks the search button.
 
-## Code scaffolding
+4. **Login/Logout**:
+   - **Login**: Navigates to a login component where users can input their credentials.
+   - **Logout**: Displays a confirmation message indicating the user has logged out.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+5. **Styling**:
+   - Clean and modern design with consistent colors across all components.
+   - Hover effects on navigation links for better user experience.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Project Structure
