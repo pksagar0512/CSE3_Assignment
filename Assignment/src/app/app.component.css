@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    padding: 1rem;
+  }
+  .navbar a, .navbar button {
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar input {
+    padding: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  }
+  

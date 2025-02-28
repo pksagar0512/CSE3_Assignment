@@ -1,82 +1,125 @@
-Title: Create a Responsive Navigation Bar with Angular Components
+Angular Responsive Navigation Bar
 
-Objective: Design and implement a dynamic navigation bar for a web application using Angular. Each navigation option should correspond to a unique component, and clicking the options should render the respective components via routing.
+Project Overview
 
-Requirements:
-Navigation Bar Features:
+This project is an Angular-based responsive navigation bar that includes multiple components and routing functionality. It supports the following features:
 
-The navigation bar should have the following options:
+Navigation links for Home, About, Contact, Search, Login, and Logout
 
-Home
+Search functionality with a search bar
 
-About
+Responsive design with a burger menu for mobile screens
+
+Authentication toggle between Login and Logout
+
+Angular routing to switch between different components
+
+Repository
+
+GitHub Repository
+
+Prerequisites
+
+Ensure you have the following installed on your system:
+
+Node.js (Latest LTS version recommended) - Download here
+
+Angular CLI (Globally installed)
+
+npm install -g @angular/cli
+
+Installation Steps
+
+Clone the Repository
+
+git clone https://github.com/jignesh-suthar/CSE3_Assignment.git
+
+Navigate to the Project Directory
+
+cd CSE3_Assignment
+
+Install Dependencies
+
+npm install
+
+Running the Project
+
+Start the Development Server
+
+ng serve
+
+The application will be available at http://localhost:4200/
+
+Building the Project for Production
+
+ng build --prod
+
+This generates the optimized production-ready build in the dist/ folder.
+
+Project Structure
+
+CSE3_Assignment/
+angular-navbar-app/
+│── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── home/
+│   │   │   │   ├── home.component.html
+│   │   │   │   ├── home.component.ts
+│   │   │   │   ├── home.component.css
+│   │   │   ├── about/
+│   │   │   │   ├── about.component.html
+│   │   │   │   ├── about.component.ts
+│   │   │   │   ├── about.component.css
+│   │   │   ├── contact/
+│   │   │   │   ├── contact.component.html
+│   │   │   │   ├── contact.component.ts
+│   │   │   │   ├── contact.component.css
+│   │   │   ├── search/
+│   │   │   │   ├── search.component.html
+│   │   │   │   ├── search.component.ts
+│   │   │   │   ├── search.component.css
+│   │   │   ├── login/
+│   │   │   │   ├── login.component.html
+│   │   │   │   ├── login.component.ts
+│   │   │   │   ├── login.component.css
+│   │   │   ├── logout/
+│   │   │   │   ├── logout.component.html
+│   │   │   │   ├── logout.component.ts
+│   │   │   │   ├── logout.component.css
+│   │   ├── services/
+│   │   │   ├── auth.service.ts
+│   │   │   ├── search.service.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.ts
+│   │   ├── app.component.css
+│   │   ├── app-routing.module.ts
+│   ├── assets/
+│   ├── index.html
+│   ├── styles.css
+│── README.md
+│── package.json
+│── angular.json
+
+Features Implemented
+
+✅ Angular Routing - Navigation between different components✅ Responsive Design - Navbar adapts to different screen sizes✅ Search Functionality - Captures input and logs to the console✅ Authentication Simulation - Toggles between Login and Logout✅ Mobile-Friendly Navbar - Collapses into a burger menu
+
+Additional Notes
+
+To modify styles, edit app.component.css.
+
+To add new components, use:
+
+ng generate component components/new-component
+
+To deploy the project, use Firebase, Netlify, or GitHub Pages.
+
+License
+
+This project is licensed under the MIT License.
 
 Contact
 
-Search (as a search input field)
+For any issues, feel free to open an issue in the repository or contact Jignesh Suthar.
 
-Login
-
-Logout
-
-Functionalities:
-
-When users click on "Home," "About," or "Contact," a specific component must load, displaying its respective content.
-
-The "Search" option should include a functioning input field with a search button. For simplicity, log the entered search query to the browser console upon clicking the search button.
-
-The "Login" option should navigate to a dedicated login component where users can input their credentials.
-
-The "Logout" option should display a confirmation message component indicating that the user has logged out (use a simple placeholder message).
-
-Routing:
-
-Use Angular routing to link each navigation option to its respective component.
-
-Configure the routes in the app-routing.module.ts file.
-
-Responsive Design:
-
-Ensure that the navigation bar is responsive. When the screen width is below 768px, display a burger menu icon (☰) to toggle the navbar options.
-
-Bonus Points:
-
-Add hover effects to the navigation bar for better user experience.
-
-Use Angular services to share the search query data between components.
-
-Create mock login/logout functionality (e.g., toggle between "Login" and "Logout" when clicked).
-
-Deliverables:
-A functional Angular application with the described navigation bar.
-
-Individual components for each of the navigation options (Home, About, Contact, Search, Login, Logout).
-
-Code properly organized into the necessary files:
-
-app.component.html, app.component.css, app.component.ts
-
-Separate components for Home, About, Contact, etc.
-
-app-routing.module.ts for routing configuration.
-
-A README file with brief instructions for running the application and navigating the navbar.
-
-Evaluation Criteria:
-Proper use of Angular routing and navigation (routerLink).
-
-Clean and modular code with individual components for each option.
-
-Responsive design of the navigation bar.
-
-Clear documentation and adherence to the requirements.
-
-This question tests the students' understanding of:
-
-Angular components and their modularity.
-
-Routing configuration.
-
-Practical use of responsive design in web development.
-
-Implementing interactivity with Angular.
