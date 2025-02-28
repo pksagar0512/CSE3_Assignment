@@ -24,45 +24,6 @@ This project demonstrates how to create a **responsive navigation bar** using An
    - Clean and modern design with consistent colors across all components.
    - Hover effects on navigation links for better user experience.
 
-## Project Structure
-src/
-├── app/
-│ ├── about/
-│ │ ├── about.component.css
-│ │ ├── about.component.html
-│ │ └── about.component.ts
-│ ├── contact/
-│ │ ├── contact.component.css
-│ │ ├── contact.component.html
-│ │ └── contact.component.ts
-│ ├── home/
-│ │ ├── home.component.css
-│ │ ├── home.component.html
-│ │ └── home.component.ts
-│ ├── login/
-│ │ ├── login.component.css
-│ │ ├── login.component.html
-│ │ └── login.component.ts
-│ ├── logout/
-│ │ ├── logout.component.css
-│ │ ├── logout.component.html
-│ │ └── logout.component.ts
-│ ├── search/
-│ │ ├── search.component.css
-│ │ ├── search.component.html
-│ │ └── search.component.ts
-│ ├── app.component.css
-│ ├── app.component.html
-│ ├── app.component.ts
-│ ├── app.config.ts
-│ └── app.routes.ts
-├── assets/
-├── main.ts
-└── styles.css
-
-
-Copy
-
 ## Setup Instructions
 
 1. **Clone the Repository**:
