@@ -1,0 +1,9 @@
+.invoice .generate-btn {
+    background: green;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
