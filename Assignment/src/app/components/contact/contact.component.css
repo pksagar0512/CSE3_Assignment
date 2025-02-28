@@ -1,0 +1,81 @@
+header{
+    text-align: center;
+    color: #003366;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f8ff;
+    text-align: center;
+    color: #003366;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    max-width: 400px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+
+.contact-info:hover, .contact-form:hover {
+    background-color: #003366;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact-info:hover h2,
+.contact-info:hover p,
+.contact-form:hover h2 {
+    color: #f0f8ff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 20px;
+    border: 1px solid #003366;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.contact-form input:hover, 
+.contact-form textarea:hover {
+    border-color: #0055a4;
+    background-color: #e6f0ff;
+}
+
+
+.contact-form button {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 70%;
+    margin-left: 50px;
+}
+
+
+.contact-form button:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+    color: #003366;
+}

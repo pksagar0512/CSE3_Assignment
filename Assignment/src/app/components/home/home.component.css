@@ -1,0 +1,86 @@
+header {
+    color: #003366;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #003366;
+    width: fit-content;
+    margin: 30px auto;
+    animation: typing 3s steps(20, end) forwards, blink 0.6s infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #003366;
+}
+
+
+.hero {
+    text-align: center;
+    /* padding: 30px; */
+    background: url('https://source.unsplash.com/1600x900/?coffee') no-repeat center center/cover;
+    color:#003366;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.menu, .about, .contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 300px;
+}
+
+.menu-item img {
+    width: auto;
+    height: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
