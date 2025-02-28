@@ -1,0 +1,23 @@
+/* src/app/app.component.css */
+nav {
+    background: #333;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+  }
+  
+  nav a.active {
+    background: #555;
+    border-radius: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  

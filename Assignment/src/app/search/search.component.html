@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ElegantSite</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <h1>Search</h1>
+            <p>Find what you're looking for with ease. Type your query below and explore relevant results.</p>
+
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Enter search term...">
+                <button class="btn" onclick="performSearch()">Search</button>
+            </div>
+
+            <div class="search-results">
+                <h2>Search Results</h2>
+                <p id="results-text">No results found. Try searching for something else.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ElegantSite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function performSearch() {
+            let searchQuery = document.getElementById("search-input").value;
+            let resultsText = document.getElementById("results-text");
+
+            if (searchQuery.trim() === "") {
+                resultsText.innerHTML = "Please enter a search term.";
+            } else {
+                resultsText.innerHTML = `Showing results for: <strong>${searchQuery}</strong>`;
+            }
+        }
+    </script>
+</body>
+</html>
