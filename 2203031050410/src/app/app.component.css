@@ -1,0 +1,35 @@
+.navContainer{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbarContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+p{
+    /* padding: 1%; */
+    margin:1%;
+    margin-top: 2%;
+}
+
+input{
+    padding: 15px
+
+}
+
+button{
+    background-color: lightblue;
+    margin: 2%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 2%;
+    cursor: pointer;
+    width: 100%;
+}
+
