@@ -1,0 +1,20 @@
+<div class="search-container">
+  <section class="search-box">
+    <input 
+      type="text" 
+      placeholder="Search for something..." 
+      (input)="onSearch($event)"
+    />
+  </section>
+
+  <section class="search-results">
+    <p *ngIf="!query">Enter a search term to see results.</p>
+
+    <div *ngIf="query">
+      <h3>Search Results for "{{ query }}"</h3>
+      <ul>
+        <li *ngFor="let result of results">{{ result }}</li>
+      </ul>
+    </div>
+  </section>
+</div>
