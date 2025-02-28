@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<nav class="navbar">
+  <a routerLink="/home">Home</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/contact">Contact</a>
+  <input [(ngModel)]="searchQuery" placeholder="Search" />
+  <button (click)="search()">🔍</button>
+  <a routerLink="/login" *ngIf="!isLoggedIn">Login</a>
+  <a routerLink="/logout" *ngIf="isLoggedIn" (click)="logout()">Logout</a>
+</nav>
+<router-outlet></router-outlet>
+=======
 <nav>
   <div class="nav-container">
     <div class="logo">MyApp</div>
@@ -13,3 +25,4 @@
   </div>
 </nav>
 <router-outlet></router-outlet>
+>>>>>>> b91eb2d24cb90e195380ac1dc6c1a5f35521a9bd

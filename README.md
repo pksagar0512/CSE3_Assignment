@@ -1,47 +1,125 @@
-# Responsive Navigation Bar with Angular 17
+Angular Responsive Navigation Bar
 
-This project demonstrates how to create a **responsive navigation bar** using Angular 17. The navigation bar includes options for **Home**, **About**, **Contact**, **Search**, **Login**, and **Logout**. Each option is linked to a dedicated component, and the application uses Angular routing to dynamically load the respective components.
+Project Overview
 
-## Features
+This project is an Angular-based responsive navigation bar that includes multiple components and routing functionality. It supports the following features:
 
-1. **Responsive Navigation Bar**:
-   - Collapses into a burger menu on screens smaller than 768px.
-   - Toggle the menu by clicking the burger icon (☰).
+Navigation links for Home, About, Contact, Search, Login, and Logout
 
-2. **Routing**:
-   - Each navigation option (`Home`, `About`, `Contact`, `Search`, `Login`, `Logout`) is linked to its respective component.
-   - Uses Angular routing for seamless navigation.
+Search functionality with a search bar
 
-3. **Search Functionality**:
-   - Includes a search input field.
-   - Logs the search query to the console when the user presses **Enter** or clicks the search button.
+Responsive design with a burger menu for mobile screens
 
-4. **Login/Logout**:
-   - **Login**: Navigates to a login component where users can input their credentials.
-   - **Logout**: Displays a confirmation message indicating the user has logged out.
+Authentication toggle between Login and Logout
 
-5. **Styling**:
-   - Clean and modern design with consistent colors across all components.
-   - Hover effects on navigation links for better user experience.
+Angular routing to switch between different components
 
-## Setup Instructions
+Repository
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/responsive-navbar.git
-   cd responsive-navbar
-Install Dependencies:
+GitHub Repository
 
-bash
-Copy
+Prerequisites
+
+Ensure you have the following installed on your system:
+
+Node.js (Latest LTS version recommended) - Download here
+
+Angular CLI (Globally installed)
+
+npm install -g @angular/cli
+
+Installation Steps
+
+Clone the Repository
+
+git clone https://github.com/jignesh-suthar/CSE3_Assignment.git
+
+Navigate to the Project Directory
+
+cd CSE3_Assignment
+
+Install Dependencies
+
 npm install
-Run the Application:
 
-bash
-Copy
+Running the Project
+
+Start the Development Server
+
 ng serve
-Open the Application:
 
-Navigate to http://localhost:4200 in your browser.
+The application will be available at http://localhost:4200/
 
-Thank you
+Building the Project for Production
+
+ng build --prod
+
+This generates the optimized production-ready build in the dist/ folder.
+
+Project Structure
+
+CSE3_Assignment/
+angular-navbar-app/
+│── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── home/
+│   │   │   │   ├── home.component.html
+│   │   │   │   ├── home.component.ts
+│   │   │   │   ├── home.component.css
+│   │   │   ├── about/
+│   │   │   │   ├── about.component.html
+│   │   │   │   ├── about.component.ts
+│   │   │   │   ├── about.component.css
+│   │   │   ├── contact/
+│   │   │   │   ├── contact.component.html
+│   │   │   │   ├── contact.component.ts
+│   │   │   │   ├── contact.component.css
+│   │   │   ├── search/
+│   │   │   │   ├── search.component.html
+│   │   │   │   ├── search.component.ts
+│   │   │   │   ├── search.component.css
+│   │   │   ├── login/
+│   │   │   │   ├── login.component.html
+│   │   │   │   ├── login.component.ts
+│   │   │   │   ├── login.component.css
+│   │   │   ├── logout/
+│   │   │   │   ├── logout.component.html
+│   │   │   │   ├── logout.component.ts
+│   │   │   │   ├── logout.component.css
+│   │   ├── services/
+│   │   │   ├── auth.service.ts
+│   │   │   ├── search.service.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.ts
+│   │   ├── app.component.css
+│   │   ├── app-routing.module.ts
+│   ├── assets/
+│   ├── index.html
+│   ├── styles.css
+│── README.md
+│── package.json
+│── angular.json
+
+Features Implemented
+
+✅ Angular Routing - Navigation between different components✅ Responsive Design - Navbar adapts to different screen sizes✅ Search Functionality - Captures input and logs to the console✅ Authentication Simulation - Toggles between Login and Logout✅ Mobile-Friendly Navbar - Collapses into a burger menu
+
+Additional Notes
+
+To modify styles, edit app.component.css.
+
+To add new components, use:
+
+ng generate component components/new-component
+
+To deploy the project, use Firebase, Netlify, or GitHub Pages.
+
+License
+
+This project is licensed under the MIT License.
+
+Contact
+
+For any issues, feel free to open an issue in the repository or contact Jignesh Suthar.
+
