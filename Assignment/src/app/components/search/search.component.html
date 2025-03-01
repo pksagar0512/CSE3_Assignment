@@ -1,10 +1,49 @@
-<div class="search-container">
-    <h1>Search</h1>
-    <input 
-      type="text" 
-      [(ngModel)]="searchQuery" 
-      placeholder="Enter your search query"
-      (keydown.enter)="onSearch()" 
-    >
-    <button (click)="onSearch()">Search</button>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Restro Café</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Restro Café</h1>
+       
+    </header>
+
+    <!-- Search Section -->
+    <section class="search">
+        <h2>Search Our Menu</h2>
+        <p>Looking for something specific? Search for your favorite dishes, drinks, or services.</p>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for food, drinks, or services...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Restro Café | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function performSearch() {
+            let searchQuery = document.getElementById("searchInput").value.toLowerCase();
+            let resultsDiv = document.getElementById("searchResults");
+
+            if (searchQuery === "") {
+                resultsDiv.innerHTML = "<p>Please enter a search term.</p>";
+            } else {
+                resultsDiv.innerHTML = "<p>Searching for: <strong>" + searchQuery + "</strong>...</p>";
+            }
+        }
+    </script>
+
+</body>
+</html>

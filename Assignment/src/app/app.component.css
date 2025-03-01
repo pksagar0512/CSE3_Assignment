@@ -1,67 +1,83 @@
 nav {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centering menu */
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #f39c12;
+}
+
+/* Hamburger menu (top-left) */
+.burger {
+  display: block;
+  position: absolute;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
   }
-  
+
   .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+      flex-direction: column;
   }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+
   .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #f39c12;
-  }
-  
-  .nav-links a.active {
-    color: #f39c12;
-    font-weight: bold;
-  }
-  
-  .burger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
       flex-direction: column;
       position: absolute;
       top: 60px;
-      right: 20px;
       background-color: #2c3e50;
       padding: 10px;
       border-radius: 5px;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .burger {
-      display: block;
-    }
+      display: none;
   }
+
+  .nav-links.active {
+      display: flex;
+  }
+}
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

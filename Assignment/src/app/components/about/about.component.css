@@ -1,18 +1,87 @@
-.about-container {
-    padding: 20px;
-    text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .about-container h1 {
-    color: #2c3e50;
-    font-size: 36px;
-  }
-  
-  .about-container p {
-    color: #34495e;
-    font-size: 18px;
-  }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* About Section */
+.about {
+  background: #ff6600;
+  color: white;
+  padding: 50px 10%;
+}
+.about h2 {
+  font-size: 36px;
+}
+.about p {
+  font-size: 18px;
+}
+
+/* Our Story Section */
+.story {
+  padding: 40px 10%;
+  background: white;
+  color: black;
+  text-align: center;
+}
+.story h3 {
+  color: #ff6600;
+  font-size: 28px;
+}
+.story p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  padding: 40px 10%;
+  background: #f4f4f4;
+  text-align: center;
+}
+.why-choose h3 {
+  color: #ff6600;
+  font-size: 28px;
+}
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+.why-choose li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
