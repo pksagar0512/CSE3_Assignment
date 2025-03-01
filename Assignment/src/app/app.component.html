@@ -1,12 +1,57 @@
-    <header>
-        <nav>
-            <ul>
-                <li><a Link="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(155, 85, 123);
+    }
+
+    nav {
+      position: relative; /* Ensure positioning context */
+      z-index: 10; /* Bring nav to the front */
+
+      background-color: rgb(128, 8, 120);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+    }
+
+    ul li{
+      padding: 20px;
+      font-weight: bolder;
+      font-style:inherit;
+      color: white;
+    }
+
+    ul li a{
+      color: white;
+      text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/services">Services</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
 <router-outlet></router-outlet>
+</body>
+</html>
