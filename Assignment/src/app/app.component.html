@@ -1,3 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(180, 210, 237);
+    }
+
+    nav{
+      background-color: rgb(121, 7, 104);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+    }
+
+    ul li{
+      padding: 20px;
+      font-weight: bolder;
+      font-style:inherit;
+      color: white;
+    }
+
+    ul li a{
+      color: white;
+      text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/Contact">Contact</a></li>
+        <li><a href="/Services">Services</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+<router-outlet></router-outlet>
+</body>
+</html>
+=======
 <nav>
   <div class="nav-container">
     <div class="logo">MyApp</div>
