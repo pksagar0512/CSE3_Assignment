@@ -1,18 +1,68 @@
-.logout-container {
-    padding: 20px;
-    text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .logout-container h1 {
-    color: #2c3e50;
-    font-size: 36px;
-  }
-  
-  .logout-container p {
-    color: #34495e;
-    font-size: 18px;
-  }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Logout Section */
+.logout {
+  background: #ff6600;
+  color: white;
+  padding: 50px 10%;
+}
+.logout h2 {
+  font-size: 36px;
+}
+.logout p {
+  font-size: 18px;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: 20px;
+}
+.logout-button button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.logout-button button:hover {
+  background: #222;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
