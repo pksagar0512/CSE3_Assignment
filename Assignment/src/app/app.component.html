@@ -1,15 +1,28 @@
-<nav>
-  <div class="nav-container">
-    <div class="logo">MyApp</div>
-    <div class="nav-links" [class.active]="isNavActive">
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-      <a routerLink="/search" routerLinkActive="active">Search</a>
-      <a routerLink="/login" routerLinkActive="active">Login</a>
-      <a routerLink="/logout" routerLinkActive="active">Logout</a>
-    </div>
-    <div class="burger" (click)="toggleNav()">☰</div>
-  </div>
-</nav>
-<router-outlet></router-outlet>
+<div class="app-container">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+      <div class="logo">
+          <a routerLink="/">My Website</a>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul class="nav-links" [class.open]="isMenuOpen">
+          <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+          <li><a routerLink="/search" routerLinkActive="active">Search</a></li>
+          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+          <li><a routerLink="/logout" routerLinkActive="active">Logout</a></li>
+      </ul>
+
+      <!-- Burger Menu for Mobile -->
+      <div class="burger" (click)="toggleMenu()">
+          ☰
+      </div>
+  </nav>
+
+  <!-- Dynamic Content -->
+  <main>
+      <router-outlet></router-outlet>
+  </main>
+</div>

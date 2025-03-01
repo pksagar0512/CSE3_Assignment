@@ -1,11 +1,22 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+  styleUrls: ['./contact.component.css'],
+  standalone: true, // ✅ If using standalone components
+  imports: [CommonModule, FormsModule] // ✅ Add CommonModule & FormsModule
 })
 export class ContactComponent {
+  contact = {
+    name: '',
+    email: '',
+    message: ''
+  };
 
+  submitForm() {
+    console.log('Form Submitted', this.contact);
+  }
 }
