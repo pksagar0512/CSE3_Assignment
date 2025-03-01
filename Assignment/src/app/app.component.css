@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px;
+    color: white;
+}
+
+/* Left Navigation Links */
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-left a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Right Navigation (Search, Login/Logout, Menu) */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Buttons & Links */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.nav-right a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Burger Menu Button */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.mobile-menu a:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-left {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+}
