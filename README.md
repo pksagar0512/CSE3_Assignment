@@ -1,82 +1,47 @@
-Title: Create a Responsive Navigation Bar with Angular Components
+# Responsive Navigation Bar with Angular 17
 
-Objective: Design and implement a dynamic navigation bar for a web application using Angular. Each navigation option should correspond to a unique component, and clicking the options should render the respective components via routing.
+This project demonstrates how to create a **responsive navigation bar** using Angular 17. The navigation bar includes options for **Home**, **About**, **Contact**, **Search**, **Login**, and **Logout**. Each option is linked to a dedicated component, and the application uses Angular routing to dynamically load the respective components.
 
-Requirements:
-Navigation Bar Features:
+## Features
 
-The navigation bar should have the following options:
+1. **Responsive Navigation Bar**:
+   - Collapses into a burger menu on screens smaller than 768px.
+   - Toggle the menu by clicking the burger icon (☰).
 
-Home
+2. **Routing**:
+   - Each navigation option (`Home`, `About`, `Contact`, `Search`, `Login`, `Logout`) is linked to its respective component.
+   - Uses Angular routing for seamless navigation.
 
-About
+3. **Search Functionality**:
+   - Includes a search input field.
+   - Logs the search query to the console when the user presses **Enter** or clicks the search button.
 
-Contact
+4. **Login/Logout**:
+   - **Login**: Navigates to a login component where users can input their credentials.
+   - **Logout**: Displays a confirmation message indicating the user has logged out.
 
-Search (as a search input field)
+5. **Styling**:
+   - Clean and modern design with consistent colors across all components.
+   - Hover effects on navigation links for better user experience.
 
-Login
+## Setup Instructions
 
-Logout
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/responsive-navbar.git
+   cd responsive-navbar
+Install Dependencies:
 
-Functionalities:
+bash
+Copy
+npm install
+Run the Application:
 
-When users click on "Home," "About," or "Contact," a specific component must load, displaying its respective content.
+bash
+Copy
+ng serve
+Open the Application:
 
-The "Search" option should include a functioning input field with a search button. For simplicity, log the entered search query to the browser console upon clicking the search button.
+Navigate to http://localhost:4200 in your browser.
 
-The "Login" option should navigate to a dedicated login component where users can input their credentials.
-
-The "Logout" option should display a confirmation message component indicating that the user has logged out (use a simple placeholder message).
-
-Routing:
-
-Use Angular routing to link each navigation option to its respective component.
-
-Configure the routes in the app-routing.module.ts file.
-
-Responsive Design:
-
-Ensure that the navigation bar is responsive. When the screen width is below 768px, display a burger menu icon (☰) to toggle the navbar options.
-
-Bonus Points:
-
-Add hover effects to the navigation bar for better user experience.
-
-Use Angular services to share the search query data between components.
-
-Create mock login/logout functionality (e.g., toggle between "Login" and "Logout" when clicked).
-
-Deliverables:
-A functional Angular application with the described navigation bar.
-
-Individual components for each of the navigation options (Home, About, Contact, Search, Login, Logout).
-
-Code properly organized into the necessary files:
-
-app.component.html, app.component.css, app.component.ts
-
-Separate components for Home, About, Contact, etc.
-
-app-routing.module.ts for routing configuration.
-
-A README file with brief instructions for running the application and navigating the navbar.
-
-Evaluation Criteria:
-Proper use of Angular routing and navigation (routerLink).
-
-Clean and modular code with individual components for each option.
-
-Responsive design of the navigation bar.
-
-Clear documentation and adherence to the requirements.
-
-This question tests the students' understanding of:
-
-Angular components and their modularity.
-
-Routing configuration.
-
-Practical use of responsive design in web development.
-
-Implementing interactivity with Angular.
+Thank you
