@@ -1,12 +1,37 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'Assignment';
+export class AppComponent implements OnInit {
+  isMenuOpen = false;
+  searchQuery = '';
+  isLoggedIn = false;
+
+  ngOnInit() {
+   
+    this.isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  performSearch() {
+    console.log('Search Query:', this.searchQuery);
+  }
+
+  logout() {
+    localStorage.removeItem('isLoggedIn'); // Clear login status
+    this.isLoggedIn = false;
+    alert('You have been logged out!');
+    location.reload(); // Refresh page to update UI
+  }
 }

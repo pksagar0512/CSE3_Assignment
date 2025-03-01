@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 10px;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.h1 {
+  Color: blue;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  
+}
