@@ -1,4 +1,36 @@
 <div class="contact-container">
-    <h1>Contact Us</h1>
-    <p>Reach out to us for any inquiries or support.</p>
+  <!-- Page Title -->
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you! Fill out the form below or reach us at our contact details.</p>
+
+  <!-- Contact Form -->
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+      <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" [(ngModel)]="contact.name" name="name" required #name="ngModel">
+          <div class="error" *ngIf="name.invalid && name.touched">Name is required</div>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" [(ngModel)]="contact.email" name="email" required #email="ngModel">
+          <div class="error" *ngIf="email.invalid && email.touched">Enter a valid email</div>
+      </div>
+
+      <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" [(ngModel)]="contact.message" name="message" required #message="ngModel"></textarea>
+          <div class="error" *ngIf="message.invalid && message.touched">Message is required</div>
+      </div>
+
+      <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+  </form>
+
+  <!-- Contact Info Section -->
+  <div class="contact-info">
+      <h2>Our Contact Details</h2>
+      <p><strong>Address:</strong> Landmark, Vadodara, India</p>
+      <p><strong>Email:</strong> support&#64;angular.com</p> <!-- ✅ Fixed issue -->
+      <p><strong>Phone:</strong> +123 456 7890</p>
   </div>
+</div>

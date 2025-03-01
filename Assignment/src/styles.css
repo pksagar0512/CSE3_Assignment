@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+/* 🌟 Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* 🌟 Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🌟 Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    outline: none;
+    width: 150px;
+}
+
+.search-bar button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #0056b3;
+}
+
+/* 🌟 Mobile Menu */
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #007bff;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}

@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
+  standalone: true, // ✅ Standalone mode enabled
+  imports: [RouterModule], // ✅ Import RouterModule for routing
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  isNavActive = false;
+  title = 'Angular Navigation';
+  isMenuOpen = false;
 
-  toggleNav() {
-    this.isNavActive = !this.isNavActive;
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { NgIf, CommonModule } from '@angular/common';  // ✅ Import CommonModule & NgIf
+import { FormsModule } from '@angular/forms';  // ✅ Import FormsModule for ngModel
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: true,  // ✅ Standalone component
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  imports: [CommonModule, FormsModule, NgIf]  // ✅ Required for *ngIf and [(ngModel)]
 })
 export class LoginComponent {
-  onLogin() {
-    console.log('Logged in');
+  loginData = { username: '', password: '' };
+
+  login() {
+    console.log('Logging in with', this.loginData);
   }
 }
