@@ -1,15 +1,57 @@
-<nav>
-  <div class="nav-container">
-    <div class="logo">MyApp</div>
-    <div class="nav-links" [class.active]="isNavActive">
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-      <a routerLink="/search" routerLinkActive="active">Search</a>
-      <a routerLink="/login" routerLinkActive="active">Login</a>
-      <a routerLink="/logout" routerLinkActive="active">Logout</a>
-    </div>
-    <div class="burger" (click)="toggleNav()">☰</div>
-  </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(180, 210, 237);
+    }
+
+    nav {
+      position: relative; /* Ensure positioning context */
+      z-index: 10; /* Bring nav to the front */
+
+      background-color: rgb(7, 89, 121);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+    }
+
+    ul li{
+      padding: 20px;
+      font-weight: bolder;
+      font-style:inherit;
+      color: white;
+    }
+
+    ul li a{
+      color: white;
+      text-decoration: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/services">Services</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
 <router-outlet></router-outlet>
+</body>
+</html>
