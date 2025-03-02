@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Title: Create a Responsive Navigation Bar with Angular Components
 
 Objective: Design and implement a dynamic navigation bar for a web application using Angular. Each navigation option should correspond to a unique component, and clicking the options should render the respective components via routing.
@@ -80,3 +81,25 @@ Routing configuration.
 Practical use of responsive design in web development.
 
 Implementing interactivity with Angular.
+=======
+# Responsive Navbar Angular App
+
+## Setup
+1. Clone the repository
+2. Run `npm install`
+3. Run `ng serve`
+4. Open browser at `http://localhost:4200`
+
+## Features
+- Responsive navigation bar with burger menu on mobile (<768px)
+- Routing to Home, About, Contact, Login, and Logout components
+- Functional search with service sharing
+- Toggle between Login/Logout states
+- Hover effects on nav items
+
+## Navigation
+- Click navigation items to switch components
+- Use burger menu (☰) on mobile screens
+- Enter text in search field and click Search to log query
+- Login/Logout toggles visibility based on state
+>>>>>>> aae67f8 (Initial commit - Added Angular project with navigation bar)
