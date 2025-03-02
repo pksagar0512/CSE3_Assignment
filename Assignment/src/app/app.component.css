@@ -1,67 +1,70 @@
 nav {
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
+  background-color: #4E4C67; /* Muted Dark Purple */
+  color: #F4EDEA; /* Soft Cream */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #E0A96D; /* Warm Golden Brown */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #F4EDEA; /* Soft Cream */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #D26A5D; /* Muted Brick Red */
+}
+
+.nav-links a.active {
+  color: #D26A5D; /* Muted Brick Red */
+  font-weight: bold;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #F4EDEA; /* Soft Cream */
+}
+
+@media (max-width: 768px) {
   .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #f39c12;
-  }
-  
-  .nav-links a.active {
-    color: #f39c12;
-    font-weight: bold;
-  }
-  
-  .burger {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
       display: none;
       flex-direction: column;
       position: absolute;
       top: 60px;
       right: 20px;
-      background-color: #2c3e50;
+      background-color: #5B4F4F; /* Dark Muted Mauve */
       padding: 10px;
       border-radius: 5px;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .burger {
-      display: block;
-    }
   }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .burger {
+      display: block;
+  }
+}
