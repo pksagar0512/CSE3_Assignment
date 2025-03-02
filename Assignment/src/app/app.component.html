@@ -7,26 +7,15 @@
         <div class="nav-right">
             <input type="text" id="searchInput" placeholder="Search..." />
             <button onclick="search()">🔍</button>
-            <a id="authLink" href="#" onclick="toggleAuth()">Login</a>
+            <a routerLink="login" RouterLinkActive="Active">Login</a>
             <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </div>
         <div class="mobile-menu" id="mobileMenu">
             <a routerLink="'home'"RouterLinkActive="Active">Home</a>
             <a routerLink="'about'"RouterLinkActive="Active">About</a>
             <a routerLink="'contact'"RouterLinkActive="Active">Contact</a>
-            <a id="authLinkMobile" href="#" onclick="toggleAuth()">Login</a>
+            <a routerLink="login" RouterLinkActive="Active">Login</a>
         </div>
     </nav>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to MyWebsite</h1>
-            <p>Your go-to platform for seamless navigation and user experience.</p>
-            <button routerLink="/about" class="primary-btn">Learn More</button>
-        </div>
-    </header>
-    
-    <footer class="footer">
-        <p>&copy; 2025 MyApp. All rights reserved.</p>
-    </footer>
-    
+  
 <router-outlet></router-outlet>
