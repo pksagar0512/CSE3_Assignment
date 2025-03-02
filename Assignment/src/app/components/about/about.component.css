@@ -1,18 +1,19 @@
 .about-container {
-    padding: 20px;
-    text-align: center;
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .about-container h1 {
-    color: #2c3e50;
-    font-size: 36px;
-  }
-  
-  .about-container p {
-    color: #34495e;
-    font-size: 18px;
-  }
+  padding: 20px;
+  text-align: center;
+  background-color: transparent; /* Removes background */
+  border-radius: 0; /* Ensures no rounded corners */
+  box-shadow: none; /* Removes shadow */
+  margin: 20px 0;
+}
+
+.about-container h1 {
+  color: #333149; /* Matches Navbar */
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.about-container p {
+  color: #41295e; /* Soft and Readable */
+  font-size: 18px;
+}
