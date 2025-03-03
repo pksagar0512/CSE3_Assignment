@@ -1,10 +1,14 @@
 <div class="search-container">
-    <h1>Search</h1>
-    <input 
-      type="text" 
-      [(ngModel)]="searchQuery" 
-      placeholder="Enter your search query"
-      (keydown.enter)="onSearch()" 
-    >
-    <button (click)="onSearch()">Search</button>
+  <h1>Find Your Perfect Car</h1>
+  <div class="search-box">
+      <input 
+        type="text" 
+        [(ngModel)]="searchQuery" 
+        placeholder="Search for cars, rentals, or brands..."
+        (keydown.enter)="onSearch()" 
+      >
+      <button (click)="onSearch()">
+          <i class="fas fa-search"></i> Search
+      </button>
   </div>
+</div>
