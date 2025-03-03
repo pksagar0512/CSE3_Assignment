@@ -1,0 +1,15 @@
+<nav>
+  <div class="nav-container">
+    <div class="logo">MyApp</div>
+    <div class="nav-links" [class.active]="isNavActive">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/search" routerLinkActive="active">Search</a>
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+      <a routerLink="/logout" routerLinkActive="active">Logout</a>
+    </div>
+    <div class="burger" (click)="toggleNav()">☰</div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
